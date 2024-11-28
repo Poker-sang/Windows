@@ -176,7 +176,7 @@ public partial class StaggeredLayout : VirtualizingLayout
             {
                 // 0.0001 is to prevent floating point errors
                 var tempAvailableWidth = availableWidth + ColumnSpacing - 0.0001;
-                numColumns = (int)Math.Floor(tempAvailableWidth / (DesiredColumnWidth + ColumnSpacing)));
+                numColumns = (int)Math.Floor(tempAvailableWidth / (DesiredColumnWidth + ColumnSpacing));
                 columnWidth = tempAvailableWidth / numColumns - ColumnSpacing;
             }
         }
